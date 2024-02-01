@@ -6,11 +6,11 @@ class Gender(Enum):
     M = "M"
     F = "F"
 
-class UserCreate(BaseModel):
+class UserLogin(BaseModel):
     email: str
     password: str
 
-class UserRegister(UserCreate, WeightCreate ):
+class UserRegister(UserLogin, WeightCreate ):
     name: str
     gender: Gender
 
