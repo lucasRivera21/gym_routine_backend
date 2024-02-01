@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Boolean
-
+from sqlalchemy.orm import relationship
 from db import Base
 
 class User(Base):
